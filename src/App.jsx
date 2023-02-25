@@ -1,8 +1,14 @@
-import Header from "./components/Header";
+import React from "react";
+import { Footer } from "./components/Footer";
+import Headers from "./components/Header";
+import logo from "./images/logo.png";
 function App() {
+  // const title = "this is a header";
+  const img = logo;
   return (
     <>
-      <Header />
+      <Headers title={img} />
+      <Footer title={img} />
     </>
   );
 }
