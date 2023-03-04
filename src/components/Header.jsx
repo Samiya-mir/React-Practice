@@ -1,4 +1,4 @@
-export default function Header(props) {
+export default function Header({ title }) {
   function handleClick(e) {
     console.log(props);
     console.log(e.target);
@@ -8,7 +8,7 @@ export default function Header(props) {
       <div className="nav flex md:block w-full md:w-44 justify-between">
         <div className=" text-white mr-6">
           <span className="font-semibold text-xl tracking-tight">
-            {props.title}
+            <img src="/images/logo.png" alt="" />
           </span>
         </div>
         <div className="block md:hidden">
